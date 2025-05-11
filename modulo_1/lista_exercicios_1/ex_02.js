@@ -5,7 +5,7 @@
 // ATENÇÂO: VocÊ vai precisar instalar o "prompt" pra o código funcionar: npm install prompt-sync
 
 const prompt = require('prompt-sync')();
-const number = prompt("Qual é a idade da pessoa: ");
+const number = Number(prompt("Qual é a idade da pessoa: "));
 
 if (number <= 10){console.log("Essa pessoa é uma criança.")}
 else if (number <= 18 && number > 10){console.log("Essa pessoa é um adolescente.")}

@@ -4,7 +4,7 @@
 // ATENÇÂO: VocÊ vai precisar instalar o "prompt" pra o código funcionar: npm install prompt-sync
 
 const prompt = require('prompt-sync')();
-const number = prompt("Escreva um número inteiro: ");
+const number = Number(prompt("Escreva um número inteiro: "));
 
 if (number%2 == 0){console.log("O número é par")} 
 else if (number%2 != 0) {console.log("O número é impar")}
